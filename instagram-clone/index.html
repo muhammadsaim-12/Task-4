@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram UI Clone</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<main class="canvas">
+
+  <!-- ===================== PHONE 1 : PROFILE ===================== -->
+  <section class="phone" aria-label="Profile screen">
+
+    <div class="notch" aria-hidden="true"></div>
+
+    <!-- Status bar -->
+    <div class="status-bar" aria-hidden="true">
+      <div class="status-dots">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+      <div class="status-icons">
+        <span class="bar-icon wifi"></span>
+        <span class="bar-icon battery"></span>
+      </div>
+    </div>
+
+    <!-- Screen header -->
+    <header class="screen-header">
+      <div class="header-username">
+        <div class="line line--dark w-80"></div>
+        <div class="line line--light w-50 mt-3"></div>
+      </div>
+      <div class="header-icons">
+        <i class="ti ti-dots-vertical" aria-hidden="true"></i>
+        <i class="ti ti-menu-2" aria-hidden="true"></i>
+      </div>
+    </header>
+
+    <!-- Profile row: avatar + stats -->
+    <div class="profile-row">
+      <div class="avatar" aria-label="Profile photo">
+        <span class="avatar__plus" aria-hidden="true">+</span>
+      </div>
+      <div class="stats-row">
+        <div class="stat-col">
+          <div class="line line--dark w-22"></div>
+          <div class="line line--light w-32 mt-3"></div>
+        </div>
+        <div class="stat-col">
+          <div class="line line--dark w-22"></div>
+          <div class="line line--light w-32 mt-3"></div>
+        </div>
+        <div class="stat-col">
+          <div class="line line--dark w-22"></div>
+          <div class="line line--light w-32 mt-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bio -->
+    <div class="bio-block">
+      <div class="line line--light w-90 mb-4"></div>
+      <div class="line line--light w-70"></div>
+    </div>
+
+    <!-- Action buttons -->
+    <div class="btn-row">
+      <button class="btn-pill" aria-label="Edit profile"></button>
+      <button class="btn-pill" aria-label="Promotions"></button>
+      <button class="btn-pill btn-pill--sm" aria-label="More options"></button>
+    </div>
+
+    <!-- Story highlights -->
+    <div class="highlights-row">
+      <div class="story-add" aria-label="Add story">
+        <span aria-hidden="true">+</span>
+      </div>
+      <div class="story-circle story-circle--pink"   aria-label="Highlight 1"></div>
+      <div class="story-circle story-circle--purple" aria-label="Highlight 2"></div>
+      <div class="story-circle story-circle--mauve"  aria-label="Highlight 3"></div>
+    </div>
+
+    <!-- Grid / Tag tabs -->
+    <div class="tab-row" role="tablist">
+      <div class="tab-btn tab-btn--active" role="tab" aria-selected="true">
+        <i class="ti ti-layout-grid" aria-hidden="true"></i>
+      </div>
+      <div class="tab-btn" role="tab" aria-selected="false">
+        <i class="ti ti-user" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <!-- Photo grid -->
+    <div class="photo-grid" role="list">
+      <div class="photo-grid__cell photo-grid__cell--1" role="listitem"></div>
+      <div class="photo-grid__cell photo-grid__cell--2" role="listitem"></div>
+      <div class="photo-grid__cell photo-grid__cell--3" role="listitem"></div>
+      <div class="photo-grid__cell photo-grid__cell--4" role="listitem"></div>
+      <div class="photo-grid__cell photo-grid__cell--5" role="listitem"></div>
+      <div class="photo-grid__cell photo-grid__cell--6" role="listitem"></div>
+    </div>
+
+    <!-- Bottom nav -->
+    <nav class="nav-bar" aria-label="Main navigation">
+      <i class="ti ti-home nav-bar__icon nav-bar__icon--active" aria-label="Home"></i>
+      <i class="ti ti-search nav-bar__icon" aria-label="Search"></i>
+      <i class="ti ti-circle-plus nav-bar__icon" aria-label="New post"></i>
+      <i class="ti ti-heart nav-bar__icon" aria-label="Activity"></i>
+      <i class="ti ti-user-circle nav-bar__icon" aria-label="Profile"></i>
+    </nav>
+
+  </section>
+
+
+  <!-- ===================== PHONE 2 : FEED ===================== -->
+  <section class="phone" aria-label="Feed screen">
+
+    <div class="notch" aria-hidden="true"></div>
+
+    <div class="status-bar" aria-hidden="true">
+      <div class="status-dots">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+      <div class="status-icons">
+        <span class="bar-icon wifi"></span>
+        <span class="bar-icon battery"></span>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <i class="ti ti-camera" aria-label="Camera"></i>
+      <div class="header-icons">
+        <i class="ti ti-brand-telegram" aria-label="Direct messages"></i>
+        <i class="ti ti-adjustments-horizontal" aria-label="Filters"></i>
+      </div>
+    </header>
+
+    <!-- Stories strip -->
+    <div class="feed-stories" role="list" aria-label="Stories">
+      <figure class="feed-story" role="listitem">
+        <div class="feed-story__ring">
+          <div class="feed-story__avatar fs--orange"></div>
+        </div>
+        <div class="line line--light w-30 mt-3"></div>
+      </figure>
+      <figure class="feed-story" role="listitem">
+        <div class="feed-story__ring">
+          <div class="feed-story__avatar fs--pink"></div>
+        </div>
+        <div class="line line--light w-30 mt-3"></div>
+      </figure>
+      <figure class="feed-story" role="listitem">
+        <div class="feed-story__ring">
+          <div class="feed-story__avatar fs--purple"></div>
+        </div>
+        <div class="line line--light w-30 mt-3"></div>
+      </figure>
+      <figure class="feed-story" role="listitem">
+        <div class="feed-story__ring">
+          <div class="feed-story__avatar fs--violet"></div>
+        </div>
+        <div class="line line--light w-30 mt-3"></div>
+      </figure>
+      <figure class="feed-story" role="listitem">
+        <div class="feed-story__ring">
+          <div class="feed-story__avatar fs--rose"></div>
+        </div>
+        <div class="line line--light w-30 mt-3"></div>
+      </figure>
+    </div>
+
+    <!-- Post header -->
+    <div class="post-meta">
+      <div class="post-meta__avatar" aria-hidden="true"></div>
+      <div class="post-meta__info">
+        <div class="line line--dark w-50"></div>
+        <div class="line line--light w-36 mt-3"></div>
+      </div>
+      <i class="ti ti-dots" aria-hidden="true" style="font-size:13px;color:#bbb"></i>
+    </div>
+
+    <!-- Post image -->
+    <figure class="post-image" aria-label="Post photo"></figure>
+
+    <!-- Action icons -->
+    <div class="actions-row">
+      <div class="actions-row__left">
+        <i class="ti ti-heart-filled actions-row__like" aria-label="Like"></i>
+        <i class="ti ti-message-circle" aria-label="Comment"></i>
+        <i class="ti ti-send" aria-label="Share"></i>
+      </div>
+      <i class="ti ti-bookmark" aria-label="Save"></i>
+    </div>
+
+    <!-- Caption + comments -->
+    <div class="caption-block">
+      <div class="line line--light w-90 mb-4"></div>
+      <div class="line line--light w-75 mb-4"></div>
+      <div class="line line--light w-55"></div>
+    </div>
+
+    <div class="comment-row">
+      <div class="commenter-avatar commenter-avatar--1" aria-hidden="true"></div>
+      <div class="line line--light" style="flex:1"></div>
+      <i class="ti ti-dots" style="font-size:11px;color:#ccc" aria-hidden="true"></i>
+    </div>
+    <div class="comment-row" style="margin-top:4px">
+      <div class="commenter-avatar commenter-avatar--2" aria-hidden="true"></div>
+      <div class="line line--light w-60"></div>
+    </div>
+
+    <!-- Second mini post preview (purple) -->
+    <figure class="post-image post-image--mini" aria-label="Next post preview"></figure>
+
+    <!-- DM notification bubbles -->
+    <div class="dm-bubbles" aria-label="Notifications">
+      <div class="dm-bubble">
+        <i class="ti ti-heart-filled" aria-hidden="true"></i>
+        <span>2</span>
+      </div>
+      <div class="dm-bubble">
+        <i class="ti ti-message-circle" aria-hidden="true"></i>
+        <span>1</span>
+      </div>
+    </div>
+
+    <nav class="nav-bar" aria-label="Main navigation">
+      <i class="ti ti-home nav-bar__icon nav-bar__icon--active" aria-label="Home"></i>
+      <i class="ti ti-search nav-bar__icon" aria-label="Search"></i>
+      <i class="ti ti-circle-plus nav-bar__icon" aria-label="New post"></i>
+      <i class="ti ti-heart nav-bar__icon" aria-label="Activity"></i>
+      <i class="ti ti-user-circle nav-bar__icon" aria-label="Profile"></i>
+    </nav>
+
+  </section>
+
+
+  <!-- ===================== PHONE 3 : EXPLORE ===================== -->
+  <section class="phone" aria-label="Explore screen">
+
+    <div class="notch" aria-hidden="true"></div>
+
+    <div class="status-bar" aria-hidden="true">
+      <div class="status-dots">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+      <div class="status-icons">
+        <span class="bar-icon wifi"></span>
+        <span class="bar-icon battery"></span>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <div></div>
+      <i class="ti ti-settings" aria-label="Settings"></i>
+    </header>
+
+    <!-- Search bar -->
+    <div class="search-bar" role="search">
+      <i class="ti ti-search" aria-hidden="true"></i>
+      <div class="search-bar__input" aria-label="Search field"></div>
+    </div>
+
+    <!-- Mosaic explore grid -->
+    <div class="explore-grid" role="list" aria-label="Explore photos">
+      <!-- Column 1: big tile (row 1-2) then 2 small -->
+      <div class="eg eg--big  eg--warm"   role="listitem"></div>
+      <div class="eg eg--pinklight"        role="listitem"></div>
+      <div class="eg eg--mauve"            role="listitem"></div>
+      <div class="eg eg--rose"             role="listitem"></div>
+      <div class="eg eg--violet"           role="listitem"></div>
+      <!-- Column 2-3: small then big (row 3-4) then 2 small -->
+      <div class="eg eg--pink"             role="listitem"></div>
+      <div class="eg eg--big2 eg--purple"  role="listitem"></div>
+      <div class="eg eg--peach"            role="listitem"></div>
+      <div class="eg eg--lilac"            role="listitem"></div>
+      <div class="eg eg--magenta"          role="listitem"></div>
+      <div class="eg eg--lavender"         role="listitem"></div>
+    </div>
+
+    <nav class="nav-bar" aria-label="Main navigation">
+      <i class="ti ti-home nav-bar__icon" aria-label="Home"></i>
+      <i class="ti ti-search nav-bar__icon nav-bar__icon--active" aria-label="Search"></i>
+      <i class="ti ti-circle-plus nav-bar__icon" aria-label="New post"></i>
+      <i class="ti ti-heart nav-bar__icon" aria-label="Activity"></i>
+      <i class="ti ti-user-circle nav-bar__icon" aria-label="Profile"></i>
+    </nav>
+
+  </section>
+
+</main>
+
+</body>
+</html>
